@@ -26,7 +26,7 @@ public class JavaTest9 {
 		if (top == STACK SIZE) {
 			System.out.println("더 이상 데이터를 저장할 수 없습니다.");
 		}
-		stack[top++] = ;
+		stack[top++] = ?;
 	}
 	
 	public static int pop() {
@@ -34,6 +34,6 @@ public class JavaTest9 {
 			System.out.println("데이터가 없습니다. \n");
 			return 0;
 		}
-		return stack[];
+		return stack[?];
 	}
 }

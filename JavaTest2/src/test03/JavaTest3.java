@@ -12,7 +12,7 @@ public class JavaTest3 {
 		
 		// 현재 배열 출력
 		for (int i = 0; i < 10; i++) {
-			System.out.println(arr[i]+", ");
+			System.out.print(arr[i]+", ");
 		}
 		
 		System.out.print("\n");
@@ -20,7 +20,7 @@ public class JavaTest3 {
 		// 배열의 원소를 역순으로 정렬
 		for ( int j = 0; j < 5; j++) {
 			int temp = arr[j];
-			= arr[9 - j];
+			arr [j] = arr[9 - j];
 			arr[9 - j] = temp;
 		}
 		

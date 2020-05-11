@@ -12,7 +12,7 @@ public class JavaTest2 {
 		
 		Scanner sc = new Scanner(System.in);
 		
-		int input;
+		int input; <-declare
 		System.out.print("input °ª ÀÔ·Â : ");
 		
 		input = sc.nextInt();
@@ -20,11 +20,11 @@ public class JavaTest2 {
 		
 		System.out.println("(1 + 2) x input = "+result);
 		
-		String name;
+		String name; <-declare
 		System.out.print("name °ª ÀÔ·Â : ");
 		
 		name = sc.next();
-		String hello = ("¾È³ç! " + name + " ´Ô ¹İ°©½À´Ï´Ù.") ;
+		String hello = ("¾È³ç! "+name+"´Ô ¹İ°©½À´Ï´Ù.") ;
 		
 		System.out.println(hello);
 	}

@@ -23,7 +23,7 @@ public class JavaTest5 {
 			
 			while( i >= 0 && arr[i] > key) {
 				
-				arr[i+1] = ;
+				arr[i+1] = ?;
 				i = i - 1;
 			}
 			arr[i+1] = key;

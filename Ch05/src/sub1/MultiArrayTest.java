@@ -31,7 +31,20 @@ public class MultiArrayTest {
 				System.out.println("배열 arr2d의 "+(a+1)+"행 "+(b+1)+"열 원소: "+arr2d[a][b]);
 			}
 		}
-
+		System.out.println("배열 arr2d의 1행 1열 원소 : "+arr2d[0][0]);
+		System.out.println("배열 arr2d의 1행 2열 원소 : "+arr2d[0][1]);
+		System.out.println("배열 arr2d의 1행 3열 원소 : "+arr2d[0][2]);
+		System.out.println("배열 arr2d의 1행 4열 원소 : "+arr2d[0][3]);
+		
+		System.out.println("배열 arr2d의 2행 1열 원소 : "+arr2d[1][0]);
+		System.out.println("배열 arr2d의 2행 2열 원소 : "+arr2d[1][1]);
+		System.out.println("배열 arr2d의 2행 3열 원소 : "+arr2d[1][2]);
+		System.out.println("배열 arr2d의 2행 4열 원소 : "+arr2d[1][3]);
+		
+		System.out.println("배열 arr2d의 3행 1열 원소 : "+arr2d[2][0]);
+		System.out.println("배열 arr2d의 3행 2열 원소 : "+arr2d[2][1]);
+		System.out.println("배열 arr2d의 3행 3열 원소 : "+arr2d[2][2]);
+		System.out.println("배열 arr2d의 3행 4열 원소 : "+arr2d[2][3]);
 		
 		// 3차원 배열
 		int arr3d[][][] = {{{1, 2, 3},

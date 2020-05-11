@@ -13,7 +13,7 @@ public class JavaTest2 {
 		for (int i = 0; i < 8; i++) {
 			
 			if (maxNum < arr[i]) {
-				maxNum = ;
+				maxNum = arr[i];
 			}
 		}
 		

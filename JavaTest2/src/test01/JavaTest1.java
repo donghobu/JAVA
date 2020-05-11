@@ -14,7 +14,7 @@ public class JavaTest1 {
 			
 			for (col = 0; col <= row; col++) {
 				
-				System.out.print(" ");
+				System.out.print(str[col]);
 			}
 			
 			System.out.print("\n");
