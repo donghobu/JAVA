@@ -6,13 +6,13 @@ import java.util.Scanner;
  * 내용 : 함수 연습문제
  */
 public class JavaTest6 {
-	public static void ?() {
+	public static void intro() {
 		System.out.println("******* START *******");
 		System.out.println("두개의 정수를 입력");
 		
 	}
 	
-	public static int ?(? name) {
+	public static int input(String name) {
 		System.out.print("변수 "+name+" 값 입력 : ");
 		
 		Scanner sc = new Scanner(System.in);
@@ -20,13 +20,13 @@ public class JavaTest6 {
 		return input;
 	}
 	
-	public static ? result(int val) {
+	public static int result(int val) {
 		System.out.println("덧셈 결과 : "+val);
 		System.out.println("******* END *******");
-		
+		return val;
 	}
 	
-	public static ? add(int x, int y) {
+	public static int add(int x, int y) {
 		return x + y;
 	}
 	
@@ -35,7 +35,6 @@ public class JavaTest6 {
 		
 		int a = input("a");
 		int b = input("b");
-		
 		int output = add(a, b);
 		result(output);
 		

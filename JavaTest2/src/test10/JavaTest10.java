@@ -25,7 +25,7 @@ public class JavaTest10 {
 			if (rear == QUEUE_SIZE ) {
 				System.out.println("더 이상 데이터를 저장할 수 없습니다.");
 			}
-			? = data;
+			queue[rear++] = data;
 			}
 		public static int delete() {
 			if (front == QUEUE_SIZE) {

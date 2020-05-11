@@ -22,6 +22,6 @@ public class JavaTest8 {
 		if (n <= 1) {
 			return 1;
 		}
-		return n * factorial(?);
+		return n * factorial(n - 1);
 	}
 }

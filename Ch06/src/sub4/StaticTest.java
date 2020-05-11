@@ -16,6 +16,20 @@ public class StaticTest {
 		Increment inc2 = new Increment();
 		Increment inc3 = new Increment();
 		
+		// ½Ì±ÛÅæ °´Ã¼ ¾ò¾î¿À±â
+		Calc c1 = Calc.getInstance();
+		Calc c2 = Calc.getInstance();
+		
+		int r1 = c1.plus(1, 2);
+		int r2 = c2.minus(1, 2);
+		int r3 = c3.multi(2, 3);
+		int r4 = c4.div(4, 2);
+		
+		System.out.println("r1 : "+r1);
+		System.out.println("r2 : "+r2);
+		System.out.println("r3 : "+r3);
+		System.out.println("r4 : "+r4);
+		
 	}
 
 }
