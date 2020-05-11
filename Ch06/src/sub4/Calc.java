@@ -7,7 +7,7 @@ package sub4;
 public class Calc {
 	// ½Ì±ÛÅæ °´Ã¼
 	// Å¬·¡½º ¸â¹ö°¡ ÀÚ±â ÀÚ½ÅÀÇ °´Ã¼ 
-	private static Calc instance = new Calc;
+	private static Calc instance = new Calc();
 	
 	public static Calc getInstance() {
 		return instance;
