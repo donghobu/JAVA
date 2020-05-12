@@ -1,7 +1,9 @@
 package sub1;
 
 public class Account {
-	// 특성(멤버변수) 접근권한 private 선언으로 무조건 캡슐화 한다/
+	// 특성(멤버변수) 
+	// 접근권한 private 선언으로 무조건 캡슐화 한다.
+	// 자식클래스에서 참조의 대상이 될때는 protected 선언으로 수정
 	protected String bank;
 	protected String id;
 	protected String name;
