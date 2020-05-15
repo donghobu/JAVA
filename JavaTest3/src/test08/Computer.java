@@ -1,9 +1,14 @@
 package test08;
 
-public class Computer {
+public class Computer extends Product{
 
-	public Computer() {
-		// TODO Auto-generated constructor stub
+	public Computer(String category, int price) {
+		super(category, price);
 	}
-
+	
+	@Override
+	public void info() {
+		System.out.println("力前盒幅 : "+category);
+		System.out.println("力前啊拜 : "+price);
+	}
 }

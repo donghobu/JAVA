@@ -1,9 +1,6 @@
 package test09;
 
-public class Shape {
-
-	public Shape() {
-		// TODO Auto-generated constructor stub
-	}
+public ? class Shape {
+	public abstract void draw();
 
 }

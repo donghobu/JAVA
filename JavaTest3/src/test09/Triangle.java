@@ -1,9 +1,9 @@
 package test09;
 
-public class Triangle {
-
-	public Triangle() {
-		// TODO Auto-generated constructor stub
+public class Triangle extends ? {
+	@Override
+	public void draw() {
+		System.out.println("draw Triangle!");
 	}
 
 }

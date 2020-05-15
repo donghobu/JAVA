@@ -1,9 +1,15 @@
 package test10;
 
-public class Customer {
-
-	public Customer() {
-		// TODO Auto-generated constructor stub
+public class Customer extends Buyer, Seller {
+	
+	
+    @Override
+	public void sell() {
+		System.out.println("판매하기");
 	}
-
+    
+    @Override
+	public void buy() {
+		System.out.println("구매하기");
+    }
 }

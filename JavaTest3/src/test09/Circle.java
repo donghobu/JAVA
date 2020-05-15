@@ -1,9 +1,7 @@
 package test09;
 
-public class Circle {
-
-	public Circle() {
-		// TODO Auto-generated constructor stub
+public class Circle extends ? {
+	public void draw() {
+		System.out.println("draw Circle!");
 	}
-
 }
