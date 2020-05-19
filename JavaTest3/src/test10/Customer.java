@@ -1,6 +1,6 @@
 package test10;
 
-public class Customer extends Buyer, Seller {
+public class Customer implements Buyer, Seller {
 	
 	
     @Override

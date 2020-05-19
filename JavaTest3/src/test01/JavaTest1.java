@@ -17,7 +17,7 @@ public class JavaTest1 {
 	}
 	
 	public static void main(String[] args) {
-		? obj = new ?;
+		JavaTest1 obj = new JavaTest1();
 		obj.setName("ȫ�浿");
 		
 		System.out.println(obj.getName());

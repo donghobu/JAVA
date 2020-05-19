@@ -5,13 +5,13 @@ package test04;
  * 내용 : 정적변수 연습문제
  */
 class Student {
-	? ? int studentId;
+	public static int studentId;
 	private String studentName;
 	private String major;
 	private int grade;
 	
 	public Student(String studentName, String major, int grade) {
-		            ?
+		        studentId++;
 				this.studentName = studentName;
 		        this.major = major;
 		        this.grade = grade;

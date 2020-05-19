@@ -1,6 +1,6 @@
 package test10;
 
 public interface Buyer {
-	public void ?
+	public void buy();
 
 }

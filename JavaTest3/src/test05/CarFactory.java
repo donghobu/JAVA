@@ -1,14 +1,14 @@
 package test05;
 
 public class CarFactory {
-	private ? CarFactory instance = new CarFactory();
-	? CarFactory() {}
+	private static CarFactory instance = new CarFactory();
+	private CarFactory() {}
 	
-	public ? ? getInstance() {
+	public static CarFactory getInstance() {
 		return instance;
 	}
 	
-	public ? creatCar(String name, int price) {
+	public Car createCar(String name, int price) {
 		return new Car(name, price);
 	}
 

@@ -1,5 +1,5 @@
 package test10;
 
 public interface Seller {
-	public void ?
+	public void sell();
 }

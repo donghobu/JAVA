@@ -7,8 +7,8 @@ package test08;
 public class JavaTest8 {
 	public static void main(String[] args) {
 		
-		? p1 = new Television("가전", 100);
-		? p2 = new Computer("컴퓨터", 150);
+		Television p1 = new Television("가전", 100);
+		Computer   p2 = new Computer("컴퓨터", 150);
 		
 		p1.info();
 		p2.info();
