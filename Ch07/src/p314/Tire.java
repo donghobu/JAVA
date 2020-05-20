@@ -15,7 +15,7 @@ public class Tire {
 	// 메소드
 	public boolean roll() {
 		++accumulatedRotation;   //누적 회전수 1증가
-		if(accumulated<maxRotation) {
+		if(accumulatedRotation<maxRotation) {
 			System.out.println(location + " Tire 수명: " + 
 		  (maxRotation-accumulatedRotation) + "회");
 			return true;
