@@ -1,5 +1,9 @@
 package p322;
 
-public class Taxi {
+public class Taxi extends Vehicle {
+	@Override
+	public void run() {
+		System.out.println("택시가 달립니다.");
+	}
 
 }
