@@ -19,5 +19,5 @@ public class Apple {
 			System.out.println("АЁ   Ан : "+price);
 		}
 	}
-
 }
+

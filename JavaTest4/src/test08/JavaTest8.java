@@ -22,7 +22,12 @@ public class JavaTest8 {
 		//로또번호 정렬
 		treeSet = new TreeSet<>(lottoSet);
 		
-		//로또번호
+		//로또번호 출력
+		iter = treeSet.iterator();
+		
+		while() {
+			System.out.println(iter.next()+" ");
+		}
 	}
 
 }

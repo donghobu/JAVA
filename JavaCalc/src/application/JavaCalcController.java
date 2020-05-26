@@ -32,6 +32,7 @@ public class JavaCalcController implements Initializable {
 	private int operator;
 	private int firstNum;
 	private int secondNum;
+	private boolean isFirst = true;
 
 
 	@Override
@@ -59,41 +60,59 @@ public class JavaCalcController implements Initializable {
 		
 	} // initialize end
 	
-	
+	public void setNum(int num) {
+		if(isFirst) {
+		txtDisp.setText(""+num);
+		// firstNum = num;
+		isFirst = false;
+		
+	}else {
+		String getNum = txtDisp.getText();
+		String totNum = getNum + num;
+		
+		txtDisp.setText(totNum);
+		// secondNum = num;
+		
+	}
+	}
 	// 핸들러 정의
-	public void btn0Handler() {
-		System.out.println("버튼0 클릭!!!");
-	}
+	public void btn0Handler() {setNum(0);}
+	public void btn1Handler() {setNum(1);}
+	public void btn2Handler() {setNum(2);}
+	public void btn3Handler() {setNum(3);}
+	public void btn4Handler() {setNum(4);}
+	public void btn5Handler() {setNum(5);}
+	public void btn6Handler() {setNum(6);}
+	public void btn7Handler() {setNum(7);}
+	public void btn8Handler() {setNum(8);}
+	public void btn9Handler() {setNum(9);}
+	
+	public void setOperator(int operator) {
+		this.operator = operator;
 
-	public void btn1Handler() {
-		txtDisp.setText("1");
-		firstNum = 1;
+		String getNum = txtDisp.getText();
+		firstNum = Integer.parseInt(getNum);
+		
+		isFirst = true;
 	}
-	public void btn2Handler() {
-		txtDisp.setText("2");
-		secondNum = 2;
-	}
-	public void btn3Handler() {}
-	public void btn4Handler() {}
-	public void btn5Handler() {}
-	public void btn6Handler() {}
-	public void btn7Handler() {}
-	public void btn8Handler() {}
-	public void btn9Handler() {}
 	
 	public void btnPlusHandler() {
-		operator = 1;
+		setOperator(1);
 	}
 	public void btnMinusHandler() {
-		operator = 2;
+		setOperator(2);
 	}
 	public void btnMultiHandler() {
-		operator = 3;
+		setOperator(3);
 	}
 	public void btnDivHandler() {
-		operator = 4;
+		setOperator(4);
 	}
 	public void btnEqHandler() {
+		
+		String getNum = txtDisp.getText();
+		secondNum = Integer.parseInt(getNum);
+		
 		int result = 0;
 		switch (operator) {
 		case 1:
@@ -116,6 +135,7 @@ public class JavaCalcController implements Initializable {
 		operator = 0;
 		firstNum = 0;
 		secondNum = 0;
+		isFirst = true;
 		
 	}
 
