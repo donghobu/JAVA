@@ -19,17 +19,17 @@ public class JavaTest6 {
 		test.showInfo(grape);
 	}
 	
-	public void showInfo( fruit) {
-		if(fruit    Apple) {
-			Apple apple = ;
+	public void showInfo(Object fruit) {
+		if(fruit instanceof Apple) {
+			Apple apple = (Apple) fruit;
 			apple.show();
 			
-		}else if(fruit  Banana) {
-			Banana banana = ;
+		}else if(fruit instanceof Banana) {
+			Banana banana = (Banana) fruit;
 			banana.show();
 			
-		}else if(fruit  Grape) {
-			Grape grape = ;
+		}else if(fruit instanceof Grape) {
+			Grape grape = (Grape) fruit;
 			grape.show();
 		}
 	}

@@ -15,7 +15,7 @@ public class JavaTest5 {
 		
 		for(int i=0 ; i<scores.length ; i++) {
 			
-			total += Integer.(scores[i]);
+			total += Integer.parseInt(scores[i]);
 		}
 		
 		System.out.println("รัมก : "+total);

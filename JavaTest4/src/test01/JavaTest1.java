@@ -1,5 +1,8 @@
 package test01;
 
+import java.util.InputMismatchException;
+import java.util.Scanner;
+
 /*
  * 날짜 : 2020/05/25
  * 이름 : 신동호
@@ -23,12 +26,12 @@ public class JavaTest1 {
 				input = sc.nextInt();
 				
 				if(input < 0) {
-					input new Exception("음수는 입력할 수 없습니다.");
+					throw new Exception("음수는 입력할 수 없습니다.");
 				}
-			}catch ( e) {
+			}catch (InputMismatchException e) {
 				System.out.println("숫자가 아닙니다. 숫자를 입력하세요.");
 				continue;
-			}catch ( e) {
+			}catch (Exception e) {
 				System.out.println(e.getMessage());
 				continue;
 			}
@@ -45,5 +48,7 @@ public class JavaTest1 {
 			}
 		}while(true);
 		System.out.println("프로그램이 정상 종료 되었습니다.");
+		
+		
+		}
 	}
-}

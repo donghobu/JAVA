@@ -1,5 +1,7 @@
 package test10;
 
+import java.io.Serializable;
+
 public class Apple implements Serializable {
 	
 	//객체 시리얼 버젼 선언(옵션)

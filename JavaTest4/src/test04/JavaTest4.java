@@ -17,7 +17,7 @@ public class JavaTest4 {
 		String name = sc.next();
 		
 		int i = 0;
-		while(!name.(names[i])) {
+		while(!name.equals(names[i])) {
 			i++;
 		}
 		

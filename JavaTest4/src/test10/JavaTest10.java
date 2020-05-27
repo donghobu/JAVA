@@ -27,6 +27,8 @@ public class JavaTest10 {
 		oos.writeObject(apple2);
 		
 		//스트림 해제
+		oos.close();
+		fos.close();
 		
 		
 		System.out.println("현재 폴더에 apple.txt 객체파일 생성 완료!");

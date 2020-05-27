@@ -1,6 +1,8 @@
 package test10;
 
 import java.io.FileInputStream;
+import java.io.FileNotFoundException;
+import java.io.IOException;
 import java.io.ObjectInputStream;
 
 public class ReadObjectTest {
@@ -20,15 +22,16 @@ public class ReadObjectTest {
 			
 			// 스트림 해제
 			
-			{
+			ois.close();
+			fis.close();
 				
-			} catch ( e) {
+			} catch (FileNotFoundException e) {
 				System.out.println("apple.text 파일이 존재하지 않습니다.");
-			} catch ( e) {
+			} catch (IOException e) {
 				e.printStackTrace();
-			} catch ( e) {
+			} catch (ClassNotFoundException e) {
 				e.printStackTrace();
 		}
-	}
 
+}
 }

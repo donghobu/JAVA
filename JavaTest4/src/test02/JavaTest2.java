@@ -23,7 +23,7 @@ public class JavaTest2 {
 		try {
 			searchArray(find, arr);
 			System.out.println("해당하는 숫자 찾음!!!");
-		}catch ( e) {
+		}catch (Exception e) {
 			System.out.println(e.getMessage());
 		}finally {
 			sc.close();
@@ -31,7 +31,7 @@ public class JavaTest2 {
 		System.out.println("프로그램 정상 종료...");
 	}
 	
-	public static void searchArray(int find, int[] arr) NotFoundException {
+	public static void searchArray(int find, int[] arr) throws NotFoundException {
 		
 		for(int i : arr) {
 			if(i == find) {
@@ -39,7 +39,7 @@ public class JavaTest2 {
 			}
 		}
 		
-		throw ();
+		throw new NotFoundException();
 	}
 
 }
