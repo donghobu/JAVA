@@ -2,7 +2,7 @@ package p394;
 /**¹Ù±ù Å¬·¡½º**/
 
 class A {
-	A() { System.out.println("A °´Ã¼°¡ »ý¼ºµÊ");
+	A() { System.out.println("A °´Ã¼°¡ »ý¼ºµÊ");}
 	
 	/**ÀÎ½ºÅÏ½º ¸â¹ö Å¬·¡½º**/
 class B {
@@ -25,13 +25,14 @@ static class C {
 
 void method() {
 /**·ÎÄÃ Å¬·¡½º**/
-Class D {
+	class D {
 	D() { System.out.println("D °´Ã¼°¡ »ý¼ºµÊ"); }
 	int field1;
 	//static int field2;
 	void method1() { }
 	//static void method2() { }
 }
+
 D d = new D();
 d.field1 = 3;
 d.method1();
