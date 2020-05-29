@@ -19,4 +19,9 @@ public class Apple {
 		return super.toString();
 		
 	}
+
+	public void info() {
+		// TODO Auto-generated method stub
+		
+	}
 }

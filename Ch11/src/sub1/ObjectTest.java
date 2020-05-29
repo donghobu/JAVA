@@ -41,6 +41,6 @@ public class ObjectTest {
 		a2.info();
 		b4.info();
 	}
+	
 }
-	}
 
